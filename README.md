@@ -1,5 +1,5 @@
-# Hướng dẫn chạy các dự án trên Google Colab
-
+# Hướng dẫn chạy các dự án Dự đoán giá Bitcoin trên Google Colab
+Link dataset: https://www.kaggle.com/datasets/sushilkumarinfo/bitcoin-data-from-9thapr2014-to-30thdec2022
 Dưới đây là các bước chi tiết để chạy các dự án trên Google Colab, bao gồm các tệp:
 
 - `Data Visualization.ipynb`
@@ -82,20 +82,21 @@ Dưới đây là các bước chi tiết để chạy các dự án trên Googl
 
 ### 2. `Training_D_VAE.ipynb`
 - **Mô tả**: Huấn luyện mô hình Deep Variational Autoencoder (D-VAE) để phân tích dữ liệu.
-- **Kết quả**: Mã nguồn cho mô hình và các tham số huấn luyện.
+- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
 ### 3. `Training_LSTM_CNN.ipynb`
 - **Mô tả**: Kết hợp LSTM và CNN để dự đoán giá Bitcoin.
-- **Kết quả**: Dự đoán giá và độ chính xác.
+- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
 ### 4. `Training_SARIMAX.ipynb`
 - **Mô tả**: Sử dụng mô hình SARIMAX để dự đoán chuỗi thời gian giá Bitcoin.
-- **Kết quả**: Biểu đồ dự đoán chuỗi thời gian.
+- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
 ### 5. `Training_SARIMAX-LSTM.ipynb`
 - **Mô tả**: Kết hợp SARIMAX và LSTM để cải thiện độ chính xác dự đoán.
-- **Kết quả**: So sánh kết quả giữa mô hình kết hợp và mô hình đơn lẻ.
+- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
 ### 6. `Training_SARIMAX-Pathformer.ipynb`
 - **Mô tả**: Áp dụng mô hình Pathformer vào phân tích chuỗi thời gian.
-- **Kết quả**: Biểu đồ và số liệu dự đoán nâng cao.
+- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
+
