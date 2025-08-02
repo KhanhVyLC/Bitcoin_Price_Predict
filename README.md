@@ -80,24 +80,33 @@ Dưới đây là các bước chi tiết để chạy các dự án trên Googl
 ### 1. `Data Visualization.ipynb`
 - **Mô tả**: Phân tích và trực quan hóa dữ liệu giao dịch Bitcoin.
 - **Kết quả**: Các biểu đồ thể hiện xu hướng giá, khối lượng giao dịch, v.v.
-
 ### 2. `Training_D_VAE.ipynb`
-- **Mô tả**: Huấn luyện mô hình Deep Variational Autoencoder (D-VAE) để phân tích dữ liệu.
-- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
+- **Mô tả**: Huấn luyện mô hình Diffusion Variational Autoencoder (D-VAE) để phân tích dữ liệu.
 
-### 3. `Training_LSTM_CNN.ipynb`
+### 3. `Training_SARIMAX.ipynb`
 - **Mô tả**: Kết hợp LSTM và CNN để dự đoán giá Bitcoin.
-- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
-### 4. `Training_SARIMAX.ipynb`
+### 4. `Training_SARIMAX-LSTM.ipynb`
 - **Mô tả**: Sử dụng mô hình SARIMAX để dự đoán chuỗi thời gian giá Bitcoin.
-- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
-### 5. `Training_SARIMAX-LSTM.ipynb`
+### 5. `Training_Transformer.ipynb`
 - **Mô tả**: Kết hợp SARIMAX và LSTM để cải thiện độ chính xác dự đoán.
-- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
 
-### 6. `Training_SARIMAX-Pathformer.ipynb`
+### 6. `Training_SARIMAX-Transformer.ipynb`
 - **Mô tả**: Áp dụng mô hình Pathformer vào phân tích chuỗi thời gian.
-- **Kết quả**: Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
+
+
+# Kết quả:
+- Dự đoán giá và các chỉ số đánh giá mô hình, biểu đồ dự đoán chuỗi thời gian.
+SARIMAX: MAE là 498,66, RMSE là 545,51 và MAPE là 2,26%. SARIMAX mô hình hóa hiệu quả các thành phần theo mùa và xu hướng, mang lại độ chính xác khá. Bản chất tuyến tính của nó hạn chế khả năng nắm bắt các biến động giá phức tạp.
+- SARIMAX-LSTM: MAE là 0,64, RMSE là 0,6627 và MAPE là 0,0028%. Mô hình này kết hợp mô hình xu hướng của SARIMAX với khả năng phi tuyến tính của LSTM, đạt được độ chính xác gần như hoàn hảo. Sự thành công của nó xác nhận sức mạnh của các phương pháp tiếp cận kết hợp.
+- Transformer: MAE là 9.712,76, RMSE là 10.550,84 và MAPE là 44,91%. Hiệu suất kém của Transformer là điều đáng ngạc nhiên, xét đến sức mạnh của nó trong các tác vụ tuần tự. Transformer hoạt động tốt trên các chuỗi dữ liệu dài và giàu quan hệ, chẳng hạn như văn bản hoặc chuỗi phân loại. Tuy nhiên, dữ liệu giá Bitcoin là chuỗi thời gian thường bị nhiễu cao, có tính không dừng và có xu hướng thay đổi đột ngột.
+- Transformer-SARIMAX: MAE là 86,64, RMSE là 94,11 và MAPE là 0,3746%. Bằng cách kết hợp mô hình tuyến tính có cấu trúc của SARIMAX với khả năng học tập còn lại của Transformer, mô hình lai này đạt được kết quả đặc biệt so với mô hình Transformer đơn lẻ.
+- Diffusion-VAE (Bộ mã hóa tự động biến đổi): MAE là 552,71, RMSE là 602,58 và MAPE là 2,33%. Diffusion-VAE, mặc dù mang tính sáng tạo, nhưng không vượt trội hơn các mô hình lai đơn giản hơn. Tiềm năng của nó nằm ở khả năng tinh chỉnh và tối ưu hóa tốt hơn.
+
+<img width="686" height="237" alt="image" src="https://github.com/user-attachments/assets/baa81c64-3598-44ee-9a3e-f38a686bfdfe" />
+
+
+
+
 
