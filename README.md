@@ -4,12 +4,11 @@ Link dataset: https://www.kaggle.com/datasets/sushilkumarinfo/bitcoin-data-from-
 Dưới đây là các bước chi tiết để chạy các dự án trên Google Colab, bao gồm các tệp:
 
 - `Data Visualization.ipynb`
-- `Training_D_VAE.ipynb`
-- `Training_LSTM_CNN.ipynb`
 - `Training_SARIMAX.ipynb`
 - `Training_SARIMAX-LSTM.ipynb`
-- `Training_SARIMAX-Pathformer.ipynb`
-
+- `Training_Transformer.ipynb`
+- `Training_SARIMAX-Transformer.ipynb`
+- `Training_Diffusion-VAE.ipynb`
 ---
 
 ## 1. Chuẩn bị môi trường
@@ -30,7 +29,7 @@ Dưới đây là các bước chi tiết để chạy các dự án trên Googl
    - `Training_SARIMAX-LSTM.ipynb`
    - `Training_Transformer.ipynb`
    - `Training_SARIMAX-Transformer.ipynb`
-   - `Training_D_VAE.ipynb`
+   - `Training_Diffusion-VAE.ipynb`
 
 ### Bước 2: Mở tệp trên Google Colab
 1. Truy cập [Google Colab](https://colab.research.google.com/).
@@ -80,7 +79,7 @@ Dưới đây là các bước chi tiết để chạy các dự án trên Googl
 ### 1. `Data Visualization.ipynb`
 - **Mô tả**: Phân tích và trực quan hóa dữ liệu giao dịch Bitcoin.
 - **Kết quả**: Các biểu đồ thể hiện xu hướng giá, khối lượng giao dịch, v.v.
-### 2. `Training_D_VAE.ipynb`
+### 2. `Training_Diffusion_VAE.ipynb`
 - **Mô tả**: Huấn luyện mô hình Diffusion Variational Autoencoder (D-VAE) để phân tích dữ liệu.
 
 ### 3. `Training_SARIMAX.ipynb`
