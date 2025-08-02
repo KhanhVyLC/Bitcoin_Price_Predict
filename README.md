@@ -26,11 +26,11 @@ Dưới đây là các bước chi tiết để chạy các dự án trên Googl
 1. Tạo một thư mục trên Google Drive (ví dụ: `Bitcoin Projects`).
 2. Upload tất cả các tệp sau vào thư mục:
    - `Data Visualization.ipynb`
-   - `Training_D_VAE.ipynb`
-   - `Training_LSTM_CNN.ipynb`
    - `Training_SARIMAX.ipynb`
    - `Training_SARIMAX-LSTM.ipynb`
-   - `Training_SARIMAX-Pathformer.ipynb`
+   - `Training_Transformer.ipynb`
+   - `Training_SARIMAX-Transformer.ipynb`
+   - `Training_D_VAE.ipynb`
 
 ### Bước 2: Mở tệp trên Google Colab
 1. Truy cập [Google Colab](https://colab.research.google.com/).
